@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@keyframes scrollLetreiro {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+@keyframes changeColor {
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: #222;
+        font-weight: bold;
+    }
+    100%{
+        color: #fff;
+    }
+}  
+@keyframes cardColor {
+    0%{
+        background-color: #000000;
+    }
+    50%{
+        background-color: #FF0202;
+    }
+    100%{
+        background-color: #000000;
+    }
+}
+/* Estilos Globais */
+body{
+    background-color: #646464;
+}  
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: #d1cfcf;
+    border-radius: 5px;
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #fff; }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.largura-padrao{
+    max-width: 1350px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.titulo{
+    font-family: 'Bungee Outline', cursive;
+    font-weight: normal;
+    animation: changeColor 5s  infinite;
+}
+.titulo span{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+}
+
+
+/* Estilos do Topo */
+.topo{
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    z-index: 1;
+}
+.container-topo{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topo nav{
+    max-width: 556px;
+    width: 100%;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item a{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.menu-item:last-of-type a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    width: 152px;
+    height: 44px;
+    clip-path: polygon(82% 0, 100% 50%, 100% 100%, 0 100%, 0 0);
+    transition: transform 0.1s ease;
+    transform-origin: left center;
+}
+.menu-item:last-of-type a:hover{
+    background-color: #A03333;
+    transform: scale(1.2);
+}
+
+/* Estilos da Primeira Seção */
+.box-apresentacao{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cor-principal{
+    position: relative;
+    top: 0;
+    background-color: #A03333;
+    z-index: 0;
+}
+.box-apresentacao .container-cores{
+    width: auto;
+    height:auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(89px, 0);
+}
+.box-apresentacao .cor-primaria{
+    width: 686px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 470px solid transparent;
+    border-bottom: 700px solid #FF5757;
+    filter: drop-shadow(-5px 0px 10px rgba(0, 0, 0, 0.25));
+}
+.box-apresentacao .cor-secundaria{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 480px;
+    border-left: 334px solid transparent;
+    border-bottom: 700px solid #FF3939;
+    filter: drop-shadow(-5px 0px 10px rgba(0, 0, 0, 0.25));
+}
+.box-apresentacao .cor-terciaria{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border-left: 155px solid transparent;
+    border-bottom: 700px solid #FF0202;
+    filter: drop-shadow(-5px 0px 10px rgba(0, 0, 0, 0.25));
+    transform: translate(-300px, 0);
+}
+.container-apresentacao{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.box-apresentacao .container-conteudo{
+    width: 689px;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.box-apresentacao .titulo{
+    font-size: 82px;
+    line-height: 102px;
+    height: 190px;
+}
+.box-apresentacao span{
+    font-size: 102px;
+}
+.box-apresentacao p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.box-apresentacao a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    width: 187px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    clip-path: polygon(82% 0, 100% 50%, 100% 100%, 0 100%, 0 0);
+    transition: transform 0.1s ease;
+    transform-origin: left center;
+}
+.box-apresentacao a:hover{
+    background-color: #FF0202;
+    transform: scale(1.1);
+}
+.box-apresentacao a img{
+    margin-left: 10px;
+}
+.box-apresentacao .container-imagem{
+    z-index: 2;
+    height: auto;
+    align-self: flex-end;
+    transform: translate(-71px, 5px);
+}
+.container{
+    overflow: hidden;
+    width: 100%;
+    height: 56px;
+    background-color: #222;
+}
+.container-letreiro{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    white-space: nowrap;
+    animation: scrollLetreiro 20s linear infinite;
+}
+.container-letreiro span{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+}
+.container-letreiro img{
+    margin: 0 45px;
+}
+
+/* Estilos da Segunda Seção */
+.box-diferenciais{
+    width: 100%;
+    height: 865px;
+    background-color: #A03333;
+}
+.box-diferenciais .titulo{
+    font-size: 62px;
+}
+.box-diferenciais .titulo span{
+    font-size: 82px;
+}
+.box-diferenciais .container-cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.container-diferenciais{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box-diferenciais .cards{
+    width: 320px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 24px;
+    transition: transform 0.5s ease;
+    transform-origin: center center;
+}
+.box-diferenciais .cards h3{
+    font-size: 28px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.box-diferenciais .cards p{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.box-diferenciais .cards img{
+    width: 77px;
+}
+.box-diferenciais .cards a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    width: 187px;
+    height: 54px;
+    clip-path: polygon(82% 0, 100% 50%, 100% 100%, 0 100%, 0 0);
+    font-family: 'Bebas Neue', sans-serif;;
+    font-size: 16px;
+    padding: 10px 52px 10px 12px;
+    transition: transform 0.4s ease;
+    transform-origin: left center;
+}   
+.box-diferenciais .cards a:hover{
+    transform: scale(1.1);
+}
+.box-diferenciais .cards a img{
+    width: 18px;
+}
+.box-diferenciais .cards:hover{
+    background-color: #222;
+    transform: scale(1.1);
+}
+.box-diferenciais .cards:hover a{
+    background-color: #FF0202;
+}
+
+/* Estilos da Terceira Seção */
+.box-planos{
+    width: 100%;
+    height: 657px;
+    background-color: #222222;
+}
+.container-planos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-planos h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 82px;
+}
+.box-planos .container-cards{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-planos .cards{
+    width: 399px;
+    height: 322px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+    transform-origin: center center;
+}
+.box-planos .cards:hover{
+    transform: scale(1.1);
+}
+.box-planos .cards:nth-of-type(even){
+    align-self: flex-start;
+    height: 362px;
+}
+.animacao{
+    animation: cardColor 1s infinite;
+}
+.box-planos .legenda{
+    width: 100%;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    font-size: 42px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-left: 20px;
+}
+
+.box-planos .cards div:last-of-type{
+    background-color: #b4b4b4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 83px;
+}
+.box-planos p{
+    width: 176px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #787878;
+}
+.box-planos a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #787878;
+    border-radius: 30px;
+    color: #787878;
+    padding: 12px 10px;
+    transition: transform 0.4s ease;
+}
+.box-planos a:hover{
+    border-color: #FF0202;
+    color: #FF0202;
+    transform: scale(1.1);
+}
+.box-planos .container-recomendado{
+    background-color: #000000;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-planos .container-recomendado p{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Estilos da Quarta Seção */
+.box-convite{
+    width: 100%;
+    height: 700px;
+}
+.box-convite .container-cores{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box-convite .cor-primaria{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    border-right: 148px solid transparent;
+    border-bottom: 700px solid #FF3939;
+    z-index: 4;
+    transform: translate(79px, 0);
+}
+.box-convite .cor-secundaria{
+    width: 295px;
+    position: absolute;
+    left: -103px;
+    top: 0;
+    z-index: 3;
+    border-right: 220px solid transparent;
+    border-bottom: 700px solid #FF0202;
+}
+.box-convite .cor-terciaria{
+    width: 494px;
+    position: absolute;
+    top: 0;
+    left: -115px;
+    border-right: 322px solid transparent;
+    border-bottom: 700px solid #FF5757;
+    filter: drop-shadow(1px 8px 6px #000);
+    clip-path: polygon(25% 0, 50% 52%, 100% 100%, 0 100%, 0 0);
+    z-index: 2;
+}
+.container-convite{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.box-convite .container-imagem{
+    align-self: flex-end;
+    position: relative;
+    z-index: 8;
+    transform: translate(0, 5px);
+}
+
+.box-convite .container-conteudo{
+    width: 814px;
+    height: 329px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 4;
+}
+.box-convite .titulo{
+    font-size: 62px;
+    line-height: 62px;
+    margin-bottom: 20px;
+}
+.box-convite .titulo span{
+    font-size: 82px;
+}
+.box-convite p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: start;
+}
+ .container-dados{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 38px;
+}
+.container-dados div{
+    width: 218px;
+    height: 111px;
+}
+.container-dados span{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 62px;
+    margin-left: 28px;
+}
+
+/* Estilos da Última Seção */
+.box-contato{
+    width: 100%;
+    height: 457px;
+    background-color: #1e1e1e;
+}
+.container-contato{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-contato .container-imagem{
+    transform: translate(0, -81px);
+}
+.box-contato h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 82px;
+}
+.box-contato p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+.container-inputs{
+    width: 498px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.box-contato input{
+    width: 234px;
+    height: 47px;
+    padding-left: 20px;
+    clip-path: polygon(82% 0, 100% 50%, 100% 100%, 0 100%, 0 0);
+    background-image: url("assets/retangulo.png");
+    background-size: 98%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    transition: border-color 0.3s;
+}
+.box-contato input:focus{
+    outline: none;
+}
+.box-contato button{
+    width: 234px;
+    height: 42px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    clip-path: polygon(88% 0, 100% 50%, 100% 100%, 0 100%, 0 0);
+    background-color: #FF0202;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    transform-origin: left center;
+}
+.box-contato button:hover{
+    transform: scale(1.2);
+}
+
+/* Estilos do Rodapé */
+.rodape{
+    width: 100%;
+    height: 253px;
+    background-color: #A03333;
+    display: flex;
+    align-items: flex-end;
+}
+.rodape div{
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.rodape span{
+    color: #FF0202;
+    font-weight: 600;
+}
+
+/* Estilos Para Telas de Até 1350px */
+@media (max-width: 1350px){
+    .box-convite .container-imagem{
+        display: none;
+    }
+    .container-convite{
+        justify-content: center;
+    }
+}
+
+
+/* Estilos Para Telas de Até 1230px */
+@media (max-width:1230px){
+    .container-imagem, .container-cores{
+        display: none;
+    }
+    .largura-padrao{
+        width: 90%;
+    }
+}
