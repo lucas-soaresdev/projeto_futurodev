@@ -57,6 +57,7 @@ body{
 .largura-padrao{
     max-width: 1350px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 a{
     text-decoration: none;
@@ -279,12 +280,13 @@ body{
     justify-content: space-evenly;
 }
 .box-diferenciais .cards{
-    width: 320px;
+    width: calc((100% / 4) - 20px);
     height: 346px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px 24px;
+    flex: 1 0 306px;
+    padding: 20px 20px;
     transition: transform 0.5s ease;
     transform-origin: center center;
 }
@@ -613,21 +615,25 @@ body{
 
 /* Estilos Para Telas de Até 1350px */
 @media (max-width: 1350px){
-    .box-convite .container-imagem{
+    .largura-padrao{
+        width: 90%;
+    }
+    .box-convite .container-imagem, .container-imagem, .container-cores{
         display: none;
     }
     .container-convite{
+        justify-content: center;
+    }
+    .box-diferenciais .container-cards{
+        width: 80%;
         justify-content: center;
     }
 }
 
 
 /* Estilos Para Telas de Até 1230px */
-@media (max-width:1230px){
-    .container-imagem, .container-cores{
-        display: none;
-    }
-    .largura-padrao{
-        width: 90%;
-    }
+@media (max-width:950px){
+   .box-diferenciais{
+    height: auto;
+   }
 }
