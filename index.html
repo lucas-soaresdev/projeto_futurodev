@@ -36,11 +36,11 @@
             <div class="container-logo">
                 <img src="assets/logo.png" alt="Logo Robust Habit">
             </div>
-            <div class="mobile-menu">
-                <div></div>
-                <div></div>
+            <div id="tr" class="mobile-menu" onclick="abrir()">
+                <div class="primeiro"></div>
+                <div class="segundo"></div>
             </div>
-            <ul class="menu-items">
+            <ul id="menu-items" class="menu-items aberto">
                 <li class="menu-item">
                     <a href="#">SOBRE</a>
                 </li>
@@ -221,5 +221,31 @@
             <p>DESENVOLVIDO POR <span>LUCAS SOARES</span></p>
         </div>
     </footer>
+
+    <script>
+         function abrir(){
+        let Main = document.querySelector('main')
+        let Footer = document.querySelector('footer')
+        let tracos = document.getElementById('tr')
+        let menuMobile = document.getElementById('menu-items')
+
+        const target = document.getElementById('animacao1')
+        const animation = 'menu-animacao'
+
+        if(menuMobile.classList.contains('aberto')){
+            menuMobile.classList.remove('aberto')
+            tracos.classList.remove('menu-animacao')
+            Main.classList.remove('esconder')
+            Footer.classList.remove('esconder')
+
+        }
+        else{
+            menuMobile.classList.add('aberto')
+            tracos.classList.add('menu-animacao')
+            Main.classList.add('esconder')
+            Footer.classList.add('esconder')
+        }
+    }
+    </script>
 </body>
 </html>

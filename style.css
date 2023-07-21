@@ -716,5 +716,31 @@ body{
     height: 2px;
     background-color: #fff;
    }
+   .menu-animacao .primeiro {
+    transform: rotate(45deg) translate(3px, 7px);
+}
+   .menu-animacao .segundo {
+    transform: rotate(-45deg) translate(-1px, -5px);
+   }
+   .aberto{
+    display: block;
+    animation-name: rotacionar;
+    animation-duration: 1s;
+}
+.esconder{
+    display: none;
+}
+
+@keyframes rotacionar {
+    from{
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
    
 }
