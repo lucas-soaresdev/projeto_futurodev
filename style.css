@@ -124,7 +124,7 @@ body{
 /* Estilos da Primeira Seção */
 .box-apresentacao{
     width: 100%;
-    height: 700px;
+    height: 702px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,7 +149,7 @@ body{
     top: 0;
     right: 0;
     border-left: 470px solid transparent;
-    border-bottom: 700px solid #FF5757;
+    border-bottom: 702px solid #FF5757;
     filter: drop-shadow(-5px 0px 10px rgba(0, 0, 0, 0.25));
 }
 .box-apresentacao .cor-secundaria{
@@ -158,7 +158,7 @@ body{
     right: 0;
     width: 480px;
     border-left: 334px solid transparent;
-    border-bottom: 700px solid #FF3939;
+    border-bottom: 702px solid #FF3939;
     filter: drop-shadow(-5px 0px 10px rgba(0, 0, 0, 0.25));
 }
 .box-apresentacao .cor-terciaria{
@@ -167,7 +167,7 @@ body{
     top: 0;
     z-index: 1;
     border-left: 155px solid transparent;
-    border-bottom: 700px solid #FF0202;
+    border-bottom: 702px solid #FF0202;
     filter: drop-shadow(-5px 0px 10px rgba(0, 0, 0, 0.25));
     transform: translate(-300px, 0);
 }
@@ -354,7 +354,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 42px;
 }
 .box-planos .cards{
     width: 399px;
@@ -629,6 +629,7 @@ body{
         width: 80%;
         justify-content: center;
         gap: 30px;
+        margin-top: 50px;
     }
     .box-diferenciais{
         height: auto;
@@ -636,6 +637,7 @@ body{
     }
     .box-diferenciais .cards{
         background-color: #222;
+        padding: 20px 21px;
     }
     .box-diferenciais .cards:hover{
         transform: none;
@@ -648,9 +650,23 @@ body{
         padding: 100px 0;
     }
     .box-planos .container-cards{
+        width: 70%;
         height: auto;
         justify-content: center;
-        margin-top: 30px;
+        margin-top:50px;
+        gap: 68px;
+    }
+    .box-planos .cards{
+        height: auto;
+        flex-grow: 1;
+    }
+    .box-planos .cards:nth-of-type(even){
+        height: auto;
+        flex-grow: 1;
+    }
+
+    .box-planos .cards:hover{
+        transform: none;
     }
 
 }
