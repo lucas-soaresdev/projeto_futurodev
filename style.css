@@ -55,9 +55,8 @@ body{
     color: #fff;
 }
 .largura-padrao{
-    max-width: 1350px;
+    max-width: 1280px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 a{
     text-decoration: none;
@@ -354,7 +353,6 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 42px;
 }
 .box-planos .cards{
     width: 399px;
@@ -615,7 +613,7 @@ body{
 }
 
 /* Estilos Para Telas de Até 1350px */
-@media (max-width: 1350px){
+@media (max-width: 1282px){
     .largura-padrao{
         width: 90%;
     }
