@@ -354,6 +354,7 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .box-planos .cards{
     width: 399px;
@@ -627,13 +628,35 @@ body{
     .box-diferenciais .container-cards{
         width: 80%;
         justify-content: center;
+        gap: 30px;
     }
+    .box-diferenciais{
+        height: auto;
+        padding: 100px 0;
+    }
+    .box-diferenciais .cards{
+        background-color: #222;
+    }
+    .box-diferenciais .cards:hover{
+        transform: none;
+    }
+    .box-diferenciais .cards a{
+        background-color: #FF0202;
+    }
+    .box-planos{
+        height: auto;
+        padding: 100px 0;
+    }
+    .box-planos .container-cards{
+        height: auto;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
 }
 
 
 /* Estilos Para Telas de Até 1230px */
 @media (max-width:950px){
-   .box-diferenciais{
-    height: auto;
-   }
+   
 }
