@@ -748,13 +748,13 @@ body{
     }
 
     .box-apresentacao .titulo{
-        font-size: 50px;
+        font-size: 44px;
         width: 400px;
         height: auto;
-        line-height: 50px;
+        line-height: 44px;
     }
     .box-apresentacao span{
-        font-size: 72px;
+        font-size: 64px;
         line-height: normal;
     }
     .box-apresentacao p{
@@ -762,8 +762,17 @@ body{
         margin-bottom: 30px;
     }
     .box-apresentacao .container-conteudo {
-        width: 510px;
+        width: 100%;
         height: auto;
+        padding: 20px
+    }
+    .box-diferenciais .titulo {
+        font-size: 54px;
+        line-height: 76px;
+        padding: 20px;
+    }
+    .box-diferenciais span{
+        font-size: 72px;
     }
 }    
 
