@@ -77,6 +77,10 @@ body{
 .mobile-navbar{
     display: none;
 }
+.menu-items{
+    display: none;
+    
+}
 
 
 /* Estilos do Topo */
@@ -697,6 +701,12 @@ body{
 
 /* Estilos Para Telas de Até 1230px */
 @media (max-width:768px){
+    .aberto{
+        display: block;
+        animation-name: rotacionar;
+        animation-duration: 1s;
+        
+    }
     .nav-bar{
         display: none;
     }
@@ -704,11 +714,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 80px;
    }
-    .mobile-navbar .menu-items{
-    display: none;
+   .mobile-navbar .container-logo{
+    width: 80%;
    }
+   
    .mobile-menu div{
     transition-duration: 0.5s;
     margin: 8px 0px;
@@ -722,11 +734,7 @@ body{
    .menu-animacao .segundo {
     transform: rotate(-45deg) translate(-1px, -5px);
    }
-   .aberto{
-    display: block;
-    animation-name: rotacionar;
-    animation-duration: 1s;
-}
+   
 .esconder{
     display: none;
 }
