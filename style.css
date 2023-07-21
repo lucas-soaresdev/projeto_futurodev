@@ -284,8 +284,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1 0 306px;
-    padding: 20px 20px;
+    padding: 20px 16px;
     transition: transform 0.5s ease;
     transform-origin: center center;
 }
@@ -479,7 +478,7 @@ body{
     align-self: flex-end;
     position: relative;
     z-index: 8;
-    transform: translate(0, 5px);
+    transform: translate(0, 4px);
 }
 
 .box-convite .container-conteudo{
@@ -613,7 +612,7 @@ body{
 }
 
 /* Estilos Para Telas de Até 1350px */
-@media (max-width: 1282px){
+@media (max-width: 1290px){
     .largura-padrao{
         width: 90%;
     }
@@ -634,6 +633,7 @@ body{
         padding: 100px 0;
     }
     .box-diferenciais .cards{
+        flex: 1 0 306px;
         background-color: #222;
         padding: 20px 21px;
     }
@@ -665,6 +665,9 @@ body{
 
     .box-planos .cards:hover{
         transform: none;
+    }
+    .box-convite .container-dados{
+        padding: 0;
     }
 
 }
