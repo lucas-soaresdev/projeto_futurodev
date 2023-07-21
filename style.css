@@ -55,7 +55,7 @@ body{
     color: #fff;
 }
 .largura-padrao{
-    max-width: 1280px;
+    width:min(100%, 1280px);
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -178,7 +178,6 @@ body{
     transform: translate(-300px, 0);
 }
 .container-apresentacao{
-    width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -278,7 +277,6 @@ body{
     gap: 20px;
 }
 .container-diferenciais{
-    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -347,7 +345,6 @@ body{
     background-color: #222222;
 }
 .container-planos{
-    width: 100%;
     height: 100%;
     padding: 0;
     display: flex;
@@ -481,7 +478,6 @@ body{
     z-index: 2;
 }
 .container-convite{
-    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -540,7 +536,6 @@ body{
     background-color: #1e1e1e;
 }
 .container-contato{
-    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -638,9 +633,6 @@ body{
     }
 }
 @media (max-width: 1278px){
-    .largura-padrao{
-        width: 100%;
-    }
     .box-convite .container-imagem, .container-imagem, .container-cores{
         display: none;
     }
@@ -784,6 +776,47 @@ body{
     .box-diferenciais span{
         font-size: 72px;
     }
+    .box-convite{
+        padding: 100px 0;
+    }
+    .box-convite .container-conteudo{
+        width: 100%;
+        height: 642px;
+        align-items: center;
+    }
+    .box-convite .container-conteudo .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-convite .titulo{
+        font-size: 42px;
+    }
+    .box-convite .titulo span{
+        font-size: 62px;
+    }
+    .box-convite p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .box-convite .container-dados{
+        width: 56%;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: center;
+    }
+    .container-dados div{
+        text-align: center;
+    }
+    .container-dados span{
+        margin: 0;
+    }
+    .container-inputs{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+   
 }    
 
     
