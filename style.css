@@ -715,6 +715,16 @@ body{
         z-index: 0;
         padding-top: 100px;
     }
+    .menu-item{
+        margin-bottom: 50px;
+    }
+    .menu-item:last-of-type a{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin: 50px;
+        background-color: #FF0202;
+    }
     .nav-bar{
         display: none;
     }
