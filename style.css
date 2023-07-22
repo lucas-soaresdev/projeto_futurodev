@@ -696,7 +696,10 @@ a{
 
 
 /* Estilos Para Telas de Até 768px */
-@media (max-width:768px){
+@media only screen and (max-width:768px){
+    main{
+        overflow-x: hidden;
+    }
     .aberto{
         display: flex;
         flex-direction: column;
@@ -849,10 +852,5 @@ a{
         font-size: 12px;
     }
 }    
-@media only screen{
-    main{
-        overflow-x: hidden;
-    }
-}
 
    
