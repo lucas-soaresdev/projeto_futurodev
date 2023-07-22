@@ -36,6 +36,7 @@
 /* Estilos Globais */
 body{
     background-color: #646464;
+    overflow-x: hidden;
 }  
 ::-webkit-scrollbar {
     width: 12px;
@@ -53,7 +54,6 @@ body{
     margin: 0;
     padding: 0;
     color: #fff;
-    overflow-x: hidden;
 }
 .largura-padrao{
     width:min(100%, 1280px);
@@ -849,6 +849,10 @@ a{
         font-size: 12px;
     }
 }    
-
+@media only screen{
+    main{
+        overflow-x: hidden;
+    }
+}
 
    
