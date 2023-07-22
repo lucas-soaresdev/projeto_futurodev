@@ -88,42 +88,7 @@ a{
 .box-diferenciais .titulo span, .box-convite .titulo span{
     font-size: 82px;
 }
-#next-btn, #prev-btn{
-    background-color: transparent;
-    border: none;
-    width: 33px;
-    height: 33px;
-}
-#next-btn img, #prev-btn img{
-    width: 100%;
-    height: 100%;
-}
-#prev-btn{
-    transform: rotate(180deg);
-}
-.container-slides{
-    display: flex;
-    align-items: center;
-}
-.slides{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 399px;
-}
-.slider{
-    width: 399px;
-    height: 322px;
-    position: absolute;
-    opacity: 0;
-}
-  .on{
-    opacity: 1;
-  }
-  .container-cards-mobile{
-    display: none;
-  }
+
 
 /* Estilos do Topo */
 .mobile-navbar, .menu-items{
@@ -638,6 +603,7 @@ a{
     }
    
 }
+/* */
 @media (max-width: 1278px){
     .box-convite .container-imagem, .box-apresentacao .container-imagem, .box-contato .container-imagem, .container-cores{
         display: none;
@@ -677,27 +643,21 @@ a{
         padding: 0 30px;
     }
     .box-planos .container-cards{
-        display: none;
+        height: auto;
+        justify-content: center;
+        margin-top:50px;
+        gap: 68px;
+        width: 90%;
     }
-    .box-planos .container-cards-mobile{
-        width: 60%;
-        height: 400px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .container-cards-mobile .cards{
+    .box-planos .cards{
+        max-width: 552px;
         width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        transition: transform 0.5s ease;
-        transform-origin: center center;
+        height: auto;
+        flex-grow: 1;
     }
-    .container-cards-mobile .cards:nth-of-type(even){
-        align-self: flex-start;
-        height: 362px;
+    .box-planos .cards:nth-of-type(even){
+        height: auto;
+        flex-grow: 1;
     }
 
     .box-planos .cards:hover{
@@ -871,5 +831,3 @@ a{
         font-size: 12px;
     }
 }    
-
-   
