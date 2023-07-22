@@ -791,7 +791,7 @@ a{
         font-size: 62px;
     }
     .box-convite{
-        padding: 100px 0;
+        height: 800px;
     }
     .box-convite .container-conteudo{
         width: 100%;
@@ -815,10 +815,10 @@ a{
     }
     .box-convite .container-dados{
         width: 56%;
+        height: 380px;
         flex-wrap: wrap;
-        flex-grow: 1;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
     .container-dados div{
         text-align: center;
@@ -827,10 +827,10 @@ a{
         margin: 0;
     }
     .container-contato h2{
-        font-size: 68px;
+        font-size: 52px;
     }
     .container-contato p{
-        font-size: 16px;
+        font-size: 14px;
     }
    
    
