@@ -665,6 +665,9 @@ body{
         height: auto;
         padding: 100px 0;
     }
+    .container-planos{
+        padding: 0 30px;
+    }
     .box-planos .container-cards{
         height: auto;
         justify-content: center;
@@ -785,6 +788,9 @@ body{
     }
     .box-planos .cards:hover{
         transform: none;
+    }
+    .box-planos h2{
+        font-size: 62px;
     }
     .box-convite{
         padding: 100px 0;
