@@ -53,6 +53,7 @@ body{
     margin: 0;
     padding: 0;
     color: #fff;
+    overflow-x: hidden;
 }
 .largura-padrao{
     width:min(100%, 1280px);
@@ -62,8 +63,8 @@ body{
 a{
     text-decoration: none;
 }
-body{
-    overflow-x: hidden;
+.container{
+    display: none;
 }
 .titulo{
     font-family: 'Bungee Outline', cursive;
