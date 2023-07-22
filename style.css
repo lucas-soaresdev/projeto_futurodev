@@ -63,9 +63,6 @@ body{
 a{
     text-decoration: none;
 }
-.container{
-    display: none;
-}
 .titulo{
     font-family: 'Bungee Outline', cursive;
     font-weight: normal;
