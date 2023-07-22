@@ -625,12 +625,13 @@ body{
     .box-planos .container-planos{
         padding: 0 16px;
     }
+    .box-planos .container-cards{
+        justify-content: space-around;
+    }
     .box-planos .cards{
-        transform: scale(0.9);
+        width: 358px;
     }
-    .box-planos .cards:hover{
-        transform: scale(1);
-    }
+   
 }
 @media (max-width: 1278px){
     .box-convite .container-imagem, .container-imagem, .container-cores{
@@ -665,13 +666,13 @@ body{
         padding: 100px 0;
     }
     .box-planos .container-cards{
-        width: 68%;
         height: auto;
         justify-content: center;
         margin-top:50px;
         gap: 68px;
     }
     .box-planos .cards{
+        width: 100%;
         height: auto;
         flex-grow: 1;
     }
@@ -685,6 +686,9 @@ body{
     }
     .box-convite .container-dados{
         padding: 0;
+    }
+    .box-convite .titulo, .box-convite .container-conteudo p{
+        text-align: center;
     }
 
 }
@@ -779,6 +783,9 @@ body{
     .box-diferenciais .titulo span{
         font-size: 56px;
     }
+    .box-planos .cards:hover{
+        transform: none;
+    }
     .box-convite{
         padding: 100px 0;
     }
@@ -827,8 +834,7 @@ body{
 
 @media (max-width: 580px){
     .box-convite .titulo{
-        width: 60%;
-        text-align: center;
+        width: 273px;
     }
     .container-inputs{
         flex-wrap: wrap;
