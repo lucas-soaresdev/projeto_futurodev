@@ -768,13 +768,16 @@ body{
         height: auto;
         padding: 20px
     }
+    .box-diferenciais .container-titulo{
+        text-align: center;
+    }
     .box-diferenciais .titulo {
-        font-size: 54px;
+        font-size: 40px;
         line-height: 76px;
         padding: 20px;
     }
-    .box-diferenciais span{
-        font-size: 72px;
+    .box-diferenciais .titulo span{
+        font-size: 56px;
     }
     .box-convite{
         padding: 100px 0;
@@ -812,14 +815,30 @@ body{
     .container-dados span{
         margin: 0;
     }
-    .container-inputs{
-        flex-wrap: wrap;
-        width: 100%;
+    .container-contato h2{
+        font-size: 68px;
     }
+    .container-contato p{
+        font-size: 16px;
+    }
+   
    
 }    
 
-    
+@media (max-width: 580px){
+    .box-convite .titulo{
+        width: 60%;
+        text-align: center;
+    }
+    .container-inputs{
+        flex-wrap: wrap;
+        width: auto;
+        gap: 20px;
+    }
+    .rodape p{
+        font-size: 12px;
+    }
+}    
 
 
    
