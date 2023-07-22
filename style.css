@@ -88,7 +88,23 @@ a{
 .box-diferenciais .titulo span, .box-convite .titulo span{
     font-size: 82px;
 }
-
+#next-btn, #prev-btn{
+    background-color: transparent;
+    border: none;
+    width: 33px;
+    height: 33px;
+}
+#next-btn img, #prev-btn img{
+    width: 100%;
+    height: 100%;
+}
+#prev-btn{
+    transform: rotate(180deg);
+}
+.container-slides{
+    display: flex;
+    align-items: center;
+}
 
 /* Estilos do Topo */
 .mobile-navbar, .menu-items{
