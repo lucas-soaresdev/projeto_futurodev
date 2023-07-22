@@ -105,6 +105,25 @@ a{
     display: flex;
     align-items: center;
 }
+.slides{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 399px;
+}
+.slider{
+    width: 399px;
+    height: 322px;
+    position: absolute;
+    opacity: 0;
+}
+  .on{
+    opacity: 1;
+  }
+  .container-cards-mobile{
+    display: none;
+  }
 
 /* Estilos do Topo */
 .mobile-navbar, .menu-items{
@@ -658,21 +677,27 @@ a{
         padding: 0 30px;
     }
     .box-planos .container-cards{
-        height: auto;
-        justify-content: center;
-        margin-top:50px;
-        gap: 68px;
-        width: 90%;
+        display: none;
     }
-    .box-planos .cards{
-        max-width: 552px;
+    .box-planos .container-cards-mobile{
+        width: 60%;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .container-cards-mobile .cards{
         width: 100%;
-        height: auto;
-        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s ease;
+        transform-origin: center center;
     }
-    .box-planos .cards:nth-of-type(even){
-        height: auto;
-        flex-grow: 1;
+    .container-cards-mobile .cards:nth-of-type(even){
+        align-self: flex-start;
+        height: 362px;
     }
 
     .box-planos .cards:hover{

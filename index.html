@@ -162,7 +162,44 @@
                         </div>
                     </figure>
                 </div>
-            </div>
+                <div class="container-cards-mobile">
+                    <button id="prev-btn"><img src="assets/arrow (1).png" alt=""></button>
+                        <div class="slides mobile">
+                            <div class="slider on">
+                            <figure class="cards">
+                                <img src="assets/treino_1.png" alt="">
+                                <figcaption class="legenda">PASSE DE 1 DIA</figcaption>
+                                <div>
+                                    <p>Teste gratuitamente</p>
+                                    <a href="#">SELECIONAR</a>
+                                </div>
+                            </figure>
+                            </div>
+                            <div class="slider">
+                            <figure class="cards">
+                                <div class="container-recomendado animacao"><p>RECOMENDADO POR USUÁRIOS</p></div>
+                                <img src="assets/treino_2.png" alt="">
+                                <figcaption class="legenda animacao">PASSE DE 1 MÊS</figcaption>
+                                <div>
+                                    <p>À partir de <span>R$99,90</span></p>
+                                    <a href="#">SELECIONAR</a>
+                                </div>
+                            </figure>
+                            </div>
+                            <div class="slider">
+                            <figure class="cards">
+                                <img src="assets/treino_3.png" alt="">
+                                <figcaption class="legenda">PASSE DE 1 ANO</figcaption>
+                                <div>
+                                    <p>À partir de <span>R$999,00</span></p>
+                                    <a href="#">SELECIONAR</a>
+                                </div>
+                            </figure>
+                            </div>
+                        </div>
+                        <button id="next-btn"><img src="assets/arrow (1).png" alt=""></button>
+                </div>
+            </div>    
         </section>
         <section class="box-convite cor-principal espacamento-padrao">
             <div class="container-convite largura-padrao">
@@ -247,6 +284,70 @@
             Footer.classList.add('esconder')
         }
     }
+
+
+const sliderContainer = document.querySelector('.slides');
+const slider = document.querySelectorAll('.slider');
+const btnPrev = document.getElementById('prev-btn');
+const btnNext = document.getElementById('next-btn');
+
+let currentSlide = 0;
+const intervalTime = 5000; // Tempo em milissegundos entre as transições dos slides
+let slideInterval;
+
+function esconderSlide() {
+  slider.forEach(item => item.classList.remove('on'));
+}
+
+function mostrarSlide() {
+  slider[currentSlide].classList.add('on');
+}
+
+function nextSlider() {
+  esconderSlide();
+  if (currentSlide === slider.length - 1) {
+    currentSlide = 0;
+  } else {
+    currentSlide++;
+  }
+  mostrarSlide();
+}
+
+function prevSlider() {
+  esconderSlide();
+  if (currentSlide === 0) {
+    currentSlide = slider.length - 1;
+  } else {
+    currentSlide--;
+  }
+  mostrarSlide();
+}
+
+function iniciarAutoAvanco() {
+  slideInterval = setInterval(nextSlider, intervalTime);
+}
+
+function pausarAutoAvanco() {
+  clearInterval(slideInterval);
+}
+
+iniciarAutoAvanco(); // Inicia o autoavanço dos slides
+
+// Adiciona eventos de clique para os botões de prev e next
+btnNext.addEventListener('click', () => {
+  nextSlider();
+  pausarAutoAvanco(); // Pausa o autoavanço ao clicar nos botões manualmente
+});
+
+btnPrev.addEventListener('click', () => {
+  prevSlider();
+  pausarAutoAvanco(); // Pausa o autoavanço ao clicar nos botões manualmente
+});
+
+// Adiciona evento de passar o mouse sobre o slider para pausar o autoavanço
+sliderContainer.addEventListener('mouseenter', pausarAutoAvanco);
+sliderContainer.addEventListener('mouseleave', iniciarAutoAvanco);
+
     </script>
 </body>
 </html>
