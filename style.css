@@ -657,6 +657,9 @@ a{
     .box-convite .titulo, .box-convite .container-conteudo p{
         text-align: center;
     }
+    .container-letreiro{
+        width: 1570px;;
+    }
 
 }
 
@@ -816,12 +819,6 @@ a{
     .container-contato p{
         font-size: 14px;
     }
-    .container-letreiro{
-        width: 1570px;
-        animation: scrollLetreiroResponsivo 20s linear infinite;
-    }
-   
-   
 }    
 
 @media (max-width: 580px){
@@ -853,21 +850,12 @@ a{
 
 @keyframes scrollLetreiro {
     from {
-      transform: translateX(100%);
+      transform: translateX(100vw);
     }
     to {
       transform: translateX(-100%);
     }
-}
-@keyframes scrollLetreiroResponsivo {
-    from {
-      transform: translateX(25%);
-    }
-    to {
-      transform: translateX(-100%);
-    }
-}
-    
+}   
 @keyframes cardColor {
     0%{
         background-color: #000000;
