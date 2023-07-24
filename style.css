@@ -576,6 +576,9 @@ a{
     font-weight: 600;
 }
 
+
+/* Tentei fazer o responsivo mas ficou uma merda, ainda tenho muita dificuldade nessa parte */
+
 /* Estilos Para Telas de Até 1350px */
 @media (max-width: 1350px){
     .box-planos .container-cards{
@@ -716,24 +719,24 @@ a{
     justify-content: space-between;
     flex-wrap: wrap;
     height: 80px;
-   }
-   .mobile-navbar .container-logo{
+    }
+    .mobile-navbar .container-logo{
     width: 80%;
-   }
-   .mobile-menu div{
+    }
+    .mobile-menu div{
     transition-duration: 0.5s;
     margin: 8px 0px;
     width: 32px;
     height: 2px;
     background-color: #fff;
-   }
-   .menu-animacao .primeiro {
+    }
+    .menu-animacao .primeiro {
     transform: rotate(45deg) translate(3px, 7px);
-   }
-   .menu-animacao .segundo {
+    }
+    .menu-animacao .segundo {
     transform: rotate(-45deg) translate(-1px, -5px);
-   }
-   .esconder{
+    }
+    .esconder{
     display: none;
     }
 
@@ -845,6 +848,16 @@ a{
         height: 30px;
         font-size: 12px;
     }
+    .box-planos p{
+        font-size: 18px;
+    }
+    .box-planos a, .box-planos .container-recomendado p{
+        font-size: 14px;
+    }
+    .box-planos .cards div:last-of-type{
+        padding: 20px;
+    }
+   
 }    
 
 

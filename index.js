@@ -1,23 +1,21 @@
 // Função para o menu mobile
+
 function abrir(){
     let Main = document.querySelector('main')
     let Footer = document.querySelector('footer')
-    let tracos = document.getElementById('tr')
+    let menuOculto = document.getElementById('menu-oculto')
     let menuMobile = document.getElementById('menu-items')
-
-    const target = document.getElementById('animacao1')
-    const animation = 'menu-animacao'
 
     if(menuMobile.classList.contains('aberto')){
         menuMobile.classList.remove('aberto')
-        tracos.classList.remove('menu-animacao')
+        menuOculto.classList.remove('menu-animacao')
         Main.classList.remove('esconder')
         Footer.classList.remove('esconder')
 
     }
     else{
         menuMobile.classList.add('aberto')
-        tracos.classList.add('menu-animacao')
+        menuOculto.classList.add('menu-animacao')
         Main.classList.add('esconder')
         Footer.classList.add('esconder')
     }
