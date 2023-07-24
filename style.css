@@ -669,6 +669,9 @@ a{
 
 /* Estilos Para Telas de Até 768px */
 @media only screen and (max-width:768px){
+    .box-apresentacao{
+    height: calc( 100vh - 56px);
+    }
     main{
         overflow-x: hidden;
     }
