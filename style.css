@@ -400,6 +400,8 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     text-align: center;
+    color: #fff;
+    font-weight: bold;
 }
 
 /* Estilos da Quarta Seção */
@@ -576,8 +578,6 @@ a{
     font-weight: 600;
 }
 
-
-/* Tentei fazer o responsivo mas ficou uma merda, ainda tenho muita dificuldade nessa parte */
 
 /* Estilos Para Telas de Até 1350px */
 @media (max-width: 1350px){
@@ -828,27 +828,20 @@ a{
 }    
 
 @media (max-width: 580px){
+    .box-contato{
+        display: flex;
+        align-items: center;
+    }
     .box-convite .titulo{
         width: 273px;
     }
     .container-inputs{
         width: 280px;
+        flex-wrap: wrap;
         gap: 20px;
     }
-    .container-inputs input{
-        width: 50%;
-        height: 24px;
-        font-size: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+   
     .rodape p{
-        font-size: 12px;
-    }
-    .box-contato button{
-        width: 150px;
-        height: 30px;
         font-size: 12px;
     }
     .box-planos p{
