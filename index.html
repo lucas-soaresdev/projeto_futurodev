@@ -200,7 +200,7 @@
                     </div>
                     <form method="post">
                         <div class="container-inputs animation">
-                            <input  name="nome" type="text" placeholder="NOME" required>
+                            <input  name="nome" type="text" placeholder="NOME" minlength="3" pattern="[a-zA-Z\s]+$" required>
                             <input name="telefone" type="tel" placeholder="TELEFONE" minlength="10" title="Número Invalido">
                         </div>
                         <button type="submit" class="animation">SOLICITAR CONTATO</button>

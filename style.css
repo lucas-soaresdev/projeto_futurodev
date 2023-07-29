@@ -533,6 +533,7 @@ a{
     outline: none;
 }
 .box-contato input:invalid{
+    animation: shake .2s ease-in-out 0s 2;
     color: #FF0202;
 }
 .box-contato button{
@@ -876,4 +877,17 @@ a{
         background-color: #000000;
     }
 }
-
+@keyframes shake {
+    0%{
+        transform: translateX(0rem);
+    }
+    25%{
+        transform: translateX(-0.5rem);
+    }
+    75%{
+        transform: translateX(0.5rem);
+    }
+    100%{
+        transform: translateX(0rem);
+    }
+}
