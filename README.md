@@ -56,7 +56,7 @@ Este projeto é licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LIC
 Para qualquer dúvida ou informação adicional, sinta-se à vontade para entrar em contato:
 
 Nome: Lucas Soares
-E-mail: lucas.soaresdbv@gmail.com
+E-mail: lucas.soaresdbv@gmail.com  <br>
 GitHub: (https://github.com/lucas-soaresdev)
 
 Agradecemos por explorar o projeto "Academia Robust Habit"! Esperamos que você tenha uma experiência agradável ao navegar pelo site, independentemente do dispositivo que estiver usando, e que ele possa servir de inspiração para projetos futuros.
