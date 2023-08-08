@@ -21,14 +21,10 @@ Bem-vindo ao repositório do projeto **Academia Robust Habit**. Este projeto é 
 1. Clone este repositório para o seu computador:
 git clone https://github.com/seu-usuario/academia-robust-habit.git
 
-arduino
-Copy code
-2. Navegue até o diretório do projeto:
+3. Navegue até o diretório do projeto:
 cd academia-robust-habit
 
-markdown
-Copy code
-3. Abra o arquivo `index.html` em um navegador web moderno para visualizar o site.
+4. Abra o arquivo `index.html` em um navegador web moderno para visualizar o site.
 
 ## Contribuições
 
@@ -37,19 +33,10 @@ Contribuições são bem-vindas! Se você deseja melhorar ou adicionar recursos 
 1. Faça um fork deste repositório.
 2. Crie um novo branch para suas modificações:
 git checkout -b minha-modificacao
-
-csharp
-Copy code
 3. Faça as alterações desejadas e commit:
 git commit -m "Minha modificação: Descrição das alterações"
-
-csharp
-Copy code
 4. Envie as alterações para o seu repositório no GitHub:
 git push origin minha-modificacao
-
-css
-Copy code
 5. Abra um pull request neste repositório original.
 
 ## Contato
