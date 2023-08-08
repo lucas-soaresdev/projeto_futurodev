@@ -36,7 +36,7 @@ Para acessar o site, basta abrir o arquivo "index.html" em um navegador da web c
 
 Contribuições são bem-vindas! Se você deseja contribuir para melhorar o site, sugerimos seguir estas etapas:
 
-1. **Fork** este repositório.
+1. Faça um **fork** deste repositório..
 2. Crie um branch para sua contribuição: `git checkout -b minha-contribuicao`.
 3. Faça as alterações desejadas.
 4. Faça um commit das alterações: `git commit -m "Minha contribuição"`.
