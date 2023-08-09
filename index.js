@@ -23,51 +23,10 @@ function abrir(){
 
 
 
-const animationElements = document.querySelectorAll('.animation');
+const menu = document.querySelector('header');
 
-// Função para verificar a posição dos elementos em relação à janela de visualização
-function checkPositions() {
-  for (let i = 0; i < animationElements.length; i++) {
-    const content = animationElements[i];
-    const elementPosition = content.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (elementPosition < windowHeight) {
-      content.classList.add('fade-in');
-    }
-  }
+function ativarScroll(){
+  menu.classList.toggle('ativo', scrollY > 0)
 }
 
-// Função para verificar se o elemento está visível na janela de visualização
-function isElementInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  );
-}
-
-// Função para adicionar a classe "fade-in" ao elemento quando estiver visível
-function fadeInElement() {
-  for (let i = 0; i < animationElements.length; i++) {
-    const content = animationElements[i];
-    if (isElementInViewport(content)) {
-      content.classList.add('fade-in');
-    }
-  }
-}
-
-
-window.addEventListener('scroll', function() {
-  checkPositions();
-  fadeInElement();
-});
-
-
-window.addEventListener('load', function() {
-  checkPositions();
-  fadeInElement();
-});
-
+window.addEventListener('scroll', ativarScroll)
