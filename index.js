@@ -1,15 +1,23 @@
 // Função para o menu mobile
 
-function abrir(){
-    let Main = document.querySelector('main')
-    let Footer = document.querySelector('footer')
-    let menuOculto = document.getElementById('menu-oculto')
-    let menuMobile = document.getElementById('menu-items')
+let Main = document.querySelector('main')
+let Footer = document.querySelector('footer')
+let menuOculto = document.getElementById('menu-oculto')
+let menuMobile = document.getElementById('menu-items')
 
+
+function abrir(){
         menuMobile.classList.toggle('aberto')
         menuOculto.classList.toggle('menu-animacao')
         Main.classList.toggle('esconder')
         Footer.classList.toggle('esconder')
+}
+
+function seguir(){
+  menuMobile.classList.toggle('aberto')
+  menuOculto.classList.toggle('menu-animacao')
+  Main.classList.toggle('esconder')
+  Footer.classList.toggle('esconder')
 }
 
 ////////////////////
