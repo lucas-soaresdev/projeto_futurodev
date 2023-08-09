@@ -12,14 +12,6 @@ function abrir(){
         Main.classList.toggle('esconder')
         Footer.classList.toggle('esconder')
 }
-
-function seguir(){
-  menuMobile.classList.toggle('aberto')
-  menuOculto.classList.toggle('menu-animacao')
-  Main.classList.toggle('esconder')
-  Footer.classList.toggle('esconder')
-}
-
 ////////////////////
 
 const menu = document.querySelector('header');
